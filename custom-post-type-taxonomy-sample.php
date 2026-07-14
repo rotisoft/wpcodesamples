@@ -43,8 +43,8 @@ function wpfo_register_books_taxonomy() { // A taxonómia regisztrálását vég
 		'rest_base'             => 'genres',                             // REST API végpont neve.
 		'rest_namespace'        => 'wp/v2',                              // REST API névtér.
 		'rest_controller_class' => 'WP_REST_Terms_Controller',           // REST vezérlő osztály.
-		'query_var'             => true,                                 // Lekérdezhető query változóval.
-		'query_var'             => 'genre',                              // Egyedi query változó neve is megadható.
+		'query_var'             => true,                                 // DUPLIKÁLT sor, minta kedvéért. Lekérdezhető query változóval.
+		'query_var'             => 'genre',                              // DUPLIKÁLT sor, minta kedvéért. Egyedi query változó neve is megadható.
 		'rewrite'               => array(
 			'slug'         => 'mufaj',                            // URL slug.
 			'with_front'   => true,                               // Permalink előtag használata.
